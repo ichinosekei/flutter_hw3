@@ -27,7 +27,7 @@
 - Управление состоянием реализовано через `Cubit`.
 - Внедрение зависимостей через `get_it`.
 - **Ссылка для скачивания APK:**  
-[Скачать APK](build/app/outputs/flutter-apk/app-release.apk) 
+[Скачать APK](app-release_true.apk) 
 
 **Скриншоты интерфейса приложения:**  
 ![Главный экран](assets/screenshot_main.png)  
