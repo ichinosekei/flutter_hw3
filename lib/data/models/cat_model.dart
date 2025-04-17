@@ -16,6 +16,15 @@ class Cat {
       breed: breed,
     );
   }
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is Cat &&
+          runtimeType == other.runtimeType &&
+          id == other.id &&
+          url == other.url;
+  @override
+  int get hashCode => id.hashCode ^ url.hashCode;
 }
 
 class Breed {
