@@ -28,10 +28,9 @@
 - Внедрение зависимостей через `get_it`.
 - **Ссылка для скачивания APK:**  
 [Скачать APK](app-release_true.apk) 
-
-**Скриншоты интерфейса приложения:** 
 ## Кнопка просмотра списка лайкнутых котиков находится в правом верхнем углу в виде значка лайка
-![Главный экран](assets/screenshot_main_true.png)  
+**Скриншоты интерфейса приложения:**  
+![Главный экран](assets/screenshot_main_true.png) 
 ![Детальный экран](assets/screenshot_detail.png)
 ![Список_лайков](assets/screenshot_liked_list.png)
 ![Фильтр_породы](assets/screenshot_filter.png)
