@@ -3,22 +3,36 @@ description: A Flutter app that displays random cat images and breed info.
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.17.0 <4.0.0'
-
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   http: ^1.3.0
-  cached_network_image: ^3.2.0
   get_it: ^7.6.0
-  flutter_bloc: ^8.1.3
   intl: ^0.18.1
-  flutter_dotenv: ^5.1.0
+  equatable: ^2.0.3
+  drift_flutter: ^0.2.4
+  connectivity_plus: ^4.0.0
+  cached_network_image: ^3.2.3
+  shared_preferences: ^2.0.15
+  flutter_dotenv: ^5.0.0
+  flutter_bloc: ^8.1.0
+  injectable: any
+  drift: ^2.11.0
+  drift_sqflite: ^2.0.1
+  path_provider: ^2.1.3
+  path: ^1.9.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  bloc_test: ^9.1.1
+  mocktail: ^0.3.0
+  drift_dev: ^2.11.0
+  build_runner: any
+
   flutter_launcher_icons:
 
 flutter:

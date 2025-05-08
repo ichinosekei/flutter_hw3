@@ -1,11 +1,22 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../data/repositories/cat_repository.dart';
 import '../../../domain/entities/liked_cat_entity.dart';
 part 'liked_cats_state.dart';
 
 class LikedCatsCubit extends Cubit<LikedCatsState> {
-  LikedCatsCubit() : super(const LikedCatsState());
+  final CatRepository repo;
 
-  void addCat(LikedCatEntity cat) {
+  LikedCatsCubit(this.repo) : super(const LikedCatsState()) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final liked = await repo.getLikedCats();
+    emit(state.copyWith(allCats: liked, filteredCats: liked));
+  }
+
+  Future<void> addCat(LikedCatEntity cat) async {
+    await repo.likeCat(cat);
     final updated = List<LikedCatEntity>.from(state.allCats)..add(cat);
     emit(state.copyWith(
         allCats: updated,

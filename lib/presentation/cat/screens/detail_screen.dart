@@ -23,6 +23,7 @@ class DetailScreen extends StatelessWidget {
               placeholder: (context, url) =>
                   const Center(child: CircularProgressIndicator()),
               errorWidget: (context, url, error) => const Icon(Icons.error),
+              fit: BoxFit.cover,
             ),
             const SizedBox(height: 16),
             breed != null
